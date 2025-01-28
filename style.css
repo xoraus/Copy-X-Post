@@ -1,0 +1,18 @@
+.copy-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 8px;
+  color: #1da1f2; /* Twitter blue */
+  transition: transform 0.2s ease-in-out;
+}
+
+.copy-button:hover {
+  transform: scale(1.2);
+  color: #0d8de5;
+}
+
+.copy-button:active {
+  transform: scale(1);
+}

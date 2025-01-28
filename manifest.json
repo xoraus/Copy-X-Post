@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "XtraCopy",
+  "short_name": "XtraCopy",
+  "description": "Simple, sleek, and directly implies copying posts to the clipboard.",
+  "author": "@xoraus",
+  "version": "1.0.0",
+  "icons": {
+    "16": "images/16.png",
+    "24": "images/24.png",
+    "32": "images/32.png",
+    "48": "images/48.png",
+    "64": "images/64.png",
+    "96": "images/96.png",
+    "128": "images/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.twitter.com/*",
+        "*://*.x.com/*"
+      ],
+      "js": [
+        "app.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
