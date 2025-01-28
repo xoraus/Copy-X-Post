@@ -16,7 +16,7 @@ Welcome to **XtraCopy**, the ultimate Chrome extension that makes copying posts 
 ## 🎥 **Demo**  
 Here’s what it looks like in action:  
 
-![Demo GIF](https://via.placeholder.com/600x300.png?text=Demo+Coming+Soon) 
+![Demo GIF](demo.png) 
 
 ---
 
