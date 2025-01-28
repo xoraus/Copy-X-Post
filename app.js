@@ -75,7 +75,6 @@ const addCopyButtonToTweets = () => {
       // Copy the tweet text and image URLs when the button is clicked
       copyButton.addEventListener("click", (e) => {
         e.stopPropagation();
-        
 
         // Retrieve the tweet text
         const tweetText = tweet.querySelector('[data-testid="tweetText"]')?.innerText;
@@ -84,7 +83,10 @@ const addCopyButtonToTweets = () => {
         if (tweetText) {
           const fullTweet = `${tweetText} — ${authorHandle}`;
           const imageUrls = extractImageUrls(tweet);
-          const fullContent = imageUrls.length > 0 ? `${fullTweet}\n\nImages:\n![](${imageUrls.join('\n')})` : fullTweet;
+          
+          // Format each image URL with Markdown syntax
+          const formattedImages = imageUrls.map(url => `![](${url})`).join('\n');
+          const fullContent = imageUrls.length > 0 ? `${fullTweet}\n\nImages:\n${formattedImages}` : fullTweet;
 
           if (copyToClipboard(fullContent)) {
             // Provide temporary success feedback
