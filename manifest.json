@@ -6,13 +6,13 @@
   "author": "@xoraus",
   "version": "1.0.0",
   "icons": {
-    "16": "images/16.png",
-    "24": "images/24.png",
-    "32": "images/32.png",
-    "48": "images/48.png",
-    "64": "images/64.png",
-    "96": "images/96.png",
-    "128": "images/128.png"
+    "16": "icons/16.png",
+    "24": "icons/24.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "64": "icons/64.png",
+    "96": "icons/96.png",
+    "128": "icons/128.png"
   },
   "content_scripts": [
     {
